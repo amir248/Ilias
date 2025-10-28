@@ -49,37 +49,7 @@
       text-align: center;
       margin-bottom: 30px;
     }
-    .services {
-      display: grid;
-      gap: 20px;
-    }
-    .service {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .service h3 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-       .services, .prices {
+    .services, .prices {
       display: grid;
       gap: 20px;
     }
@@ -99,6 +69,22 @@
       justify-content: space-between;
       border-bottom: 1px dashed #ddd;
       padding: 8px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     .contact {
       text-align: center;
@@ -145,17 +131,6 @@
   </section>
 
   <section>
-    <h2>Фото наших работ</h2>
-    <div class="gallery">
-      <img src="photo/sborka-meb.jpeg" alt="Сборка шкафа">
-      <img src="photo/sborkash.jpeg" alt="Сборка шкафа">
-      <img src="photo/sbor.jpeg" alt="Переезд и сборка мебели">
-      <img src="photo/sborka.jpeg" alt="Ремонт мебели">
-      <img src="photo/Il'yas.jpeg" alt="Разборка мебели перед переездом">
-      <img src="images/photo6.jpg" alt="Собранная мебель">
-    </div>
-  </section>
-<section>
     <h2>Цены на сборку мебели</h2>
     <div class="prices">
       <div class="price">
@@ -169,6 +144,19 @@
     </div>
     <p style="text-align:center;margin-top:10px;color:#555;">💬 Точная стоимость зависит от сложности мебели и условий. Звоните — рассчитаю бесплатно!</p>
   </section>
+
+  <section>
+    <h2>Фото наших работ</h2>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="Сборка шкафа">
+      <img src="images/photo2.jpg" alt="Сборка кухни">
+      <img src="images/photo3.jpg" alt="Переезд и сборка мебели">
+      <img src="images/photo4.jpg" alt="Ремонт мебели">
+      <img src="images/photo5.jpg" alt="Разборка мебели перед переездом">
+      <img src="images/photo6.jpg" alt="Собранная мебель после ремонта">
+    </div>
+  </section>
+
   <section class="contact">
     <p>📞 Звоните прямо сейчас:</p>
     <p class="phone">8 981 742 7080 — Ильяс</p>
