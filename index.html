@@ -17,11 +17,19 @@
       text-align: center;
       padding: 50px 20px;
     }
-    header h1 {
+    header{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      width:calc(100% - 40px);
+      flex-wrap:wrap;
+      gap:20px;
+    }
+    header > div > h1 {
       margin: 0;
       font-size: 2.2em;
     }
-    header p {
+    header > div > p {
       font-size: 1.2em;
       margin-top: 10px;
     }
@@ -121,11 +129,25 @@
 </head>
 <body>
   <header>
+    <img src="photo/Il'yas.jpeg" alt="Мастер Ильяс" 
+         style="width:150px;height:150px;object-fit:cover;border-radius:50%;
+                border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+    <div>
+      <h1>Сборка и ремонт мебели в Санкт-Петербурге</h1>
+      <p>Помощь при переездах, сборка и разборка мебели, мелкий ремонт — быстро и аккуратно!</p>
+      <a class="btn" href="tel:89817427080">Позвонить: 8 981 742 7080</a>
+    </div>
+  </header>
+<!-- <header>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+    <img src="images/Il'yas.jpg" alt="Мастер Ильяс" 
+         style="width:150px;height:150px;object-fit:cover;border-radius:50%;
+                border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);">
     <h1>Сборка и ремонт мебели в Санкт-Петербурге</h1>
     <p>Помощь при переездах, сборка и разборка мебели, мелкий ремонт — быстро и аккуратно!</p>
     <a class="btn" href="tel:89817427080">Позвонить: 8 981 742 7080</a>
-  </header>
-
+  </div>
+</header> -->
   <section>
     <h2>Услуги</h2>
     <div class="services">
