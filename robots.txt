@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /backup/
+
+Allow: /
+
+Sitemap: https://fixmebspb.ru/sitemap.xml
+
+# Для Google
+User-agent: Googlebot
+Allow: /
+
+# Для Яндекса
+User-agent: Yandex
+Allow: /
+Crawl-delay: 10
