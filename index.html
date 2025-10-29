@@ -274,14 +274,18 @@
       font-size: 0.9em;
       margin-top: 40px;
     }
+    body > header > picture > img{
+      width:150px;height:150px;object-fit:cover;border-radius:50%;       border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
   </style>
   <link rel="shortcut icon" href="ico.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <img src="photo/Il'yas.jpeg" alt="Мастер Ильяс" 
-         style="width:150px;height:150px;object-fit:cover;border-radius:50%;
-                border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);">
+    <picture>
+      <source srcset="photo/Il'yas.avif" type="image/avif">
+      <img src="photo/Il'yas.jpeg" alt="Мастер Ильяс">
+    </picture>
     <div>
       <h1>Сборка и ремонт мебели в Санкт-Петербурге</h1>
       <p>Помощь при переездах, сборка и разборка мебели, мелкий ремонт — быстро и аккуратно!</p>
@@ -319,13 +323,31 @@
   <section>
     <h2>Фото наших работ</h2>
     <div class="gallery">
-      <img src="photo/sborka-meb.jpeg" alt="Сборка шкафа">
-      <img src="photo/sborkash.jpeg" alt="Сборка шкафа">
+      <picture>
+        <source srcset="photo/sborka-meb.avif" type="image/avif">
+        <img src="photo/sborka-meb.jpeg" alt="Сборка шкафа">
+      </picture>
+      <picture>
+        <source srcset="photo/sborkash.avif" type="image/avif">
+        <img src="photo/sborkash.jpeg" alt="Сборка шкафа">
+      </picture>
       
-      <img src="photo/ok.jpeg" alt="Ремонт мебели">
-      <img src="photo/sbor.jpeg" alt="Переезд и сборка мебели">
-      <img src="photo/kupe.jpeg" alt="Разборка мебели перед переездом">
-      <img src="photo/shaf29.jpeg" alt="Собранная мебель">
+      <picture>
+        <source srcset="photo/ok.avif" type="image/avif">
+        <img src="photo/ok.jpeg" alt="Ремонт мебели">
+      </picture>
+      <picture>
+        <source srcset="photo/sbor.avif" type="image/avif">
+        <img src="photo/sbor.jpeg" alt="Переезд и сборка мебели">
+      </picture>
+      <picture>
+        <source srcset="photo/kupe.avif" type="image/avif">
+        <img src="photo/kupe.jpeg" alt="Разборка мебели перед переездом">
+      </picture>
+      <picture>
+        <source srcset="photo/shaf29.avif" type="image/avif">
+        <img src="photo/shaf29.jpeg" alt="Собранная мебель">
+      </picture>
     </div>
   </section>
 <section>
