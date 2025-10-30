@@ -9,7 +9,13 @@ function first(){
             resolve(okFirst());
         },700);
     });
-    
+}
+function clickToPhone(){
+    return new Promise((resolve)=>{
+        function onClickToPhone(){
+            const phoneLinks=document.querySelectorAll(".phone,a[href^='tel:']");
+        }
+    });
 }
 function second(){
     return new Promise((resolve)=>{
@@ -18,10 +24,19 @@ function second(){
         }
         resolve(okSecond());
     });
-    
 }
-
+function date(){
+    return new Promise((resolve)=>{
+        function okDate(){
+            const footer=document.querySelector("footer");
+            const year=new Date().getFullYear();
+            footer.innerHTML=`&copy; ${year} Ильяс — Сборка и ремонт мебели. Все права защищены.`;
+        }
+        resolve(okDate());
+    })
+}
 async function main(){
     await first();
     await second();
+    await date();
 }
