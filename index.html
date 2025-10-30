@@ -153,154 +153,8 @@
     }
   }
   </script>
-  <style>
-    body {
-      margin: 0;
-      font-family: "Segoe UI", Roboto, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: linear-gradient(90deg, #3b82f6, #06b6d4);
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      width:calc(100% - 40px);
-      flex-wrap:wrap;
-      gap:20px;
-    }
-    header > div > h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-    header > div > p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background-color: white;
-      color: #3b82f6;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .btn:hover {
-      background-color: #e0f2fe;
-    }
-    nav {
-      text-align: center;
-      margin-top: 15px;
-      width:100%;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.3s;
-    }
-
-    nav a:hover {
-      border-bottom: 2px solid white;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #2563eb;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .services {
-      display: grid;
-      gap: 20px;
-    }
-    .service {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .service h3 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
-    }
-    .gallery img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-       .services, .prices {
-      display: grid;
-      gap: 20px;
-    }
-    .service, .price {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .service h3, .price h3 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-    .price p {
-      font-size: 1.1em;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px dashed #ddd;
-      padding: 8px 0;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 40px;
-    }
-    .phone {
-      font-size: 1.5em;
-      font-weight: bold;
-      color: #16a34a;
-    }
-    .phone > a{
-      color:#16a34a;
-      text-decoration: none;
-    }
-    footer {
-      background-color: #111827;
-      color: #9ca3af;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      margin-top: 40px;
-    }
-    body > header > picture > img{
-      width:150px;height:150px;object-fit:cover;border-radius:50%;       border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);
-    }
-  </style>
+  <link rel="stylesheet" href="public/menu.css">
+  <link rel="stylesheet" href="public/style.css">
   <link rel="shortcut icon" href="ico.png" type="image/x-icon">
 
   <!-- Yandex.Metrika counter -->
@@ -323,6 +177,11 @@
       <source srcset="photo/Il'yas.avif" type="image/avif">
       <img src="photo/Il'yas.jpeg" alt="Мастер Ильяс">
     </picture>
+    <div class="nav">
+      <span class="menuLine"></span>
+      <span class="menuLine"></span>
+      <span class="menuLine"></span>
+    </div>
     <div>
       <h1>Сборка и ремонт мебели в Санкт-Петербурге</h1>
       <p>Помощь при переездах, сборка и разборка мебели, мелкий ремонт — быстро и аккуратно!</p>
