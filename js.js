@@ -68,7 +68,7 @@ function date(){
 }
 async function main(){
     await openMenu();
-    await first();
-    await second();
+    // await first();
+    // await second();
     await date();
 }
