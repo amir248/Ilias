@@ -144,4 +144,8 @@ body {
     body > header > picture > img{
       width:150px;height:150px;object-fit:cover;border-radius:50%;       border:4px solid white;box-shadow:0 4px 10px rgba(0,0,0,0.2);
     }
-    
+    .avito{
+        margin-top:33px;
+        width:100%;
+        max-width:300px;
+    }
