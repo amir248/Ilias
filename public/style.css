@@ -40,24 +40,7 @@ body {
     .btn:hover {
       background-color: #e0f2fe;
     }
-    nav {
-      text-align: center;
-      margin-top: 15px;
-      width:100%;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 500;
-      border-bottom: 2px solid transparent;
-      transition: border-color 0.3s;
-    }
-
-    nav a:hover {
-      border-bottom: 2px solid white;
-    }
+    
 
     section {
       padding: 40px 20px;
