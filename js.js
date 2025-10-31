@@ -21,9 +21,7 @@ function openMenu(){
                     transition: all ease-in-out 1s;
                     height:0;
                     font-size:0px;
-                    bottom:0;
-                    
-                     
+                    bottom:0; 
                 `;
                 })
             })

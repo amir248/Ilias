@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Кнопка «Наверх» с анимацией пианино</title>
+  <style>
+    /* Основные стили для кнопки */
+    .piano-scroll-btn {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      width: 80px;
+      height: 120px;
+      cursor: pointer;
+      z-index: 1000;
+      display: none; /* Скрываем по умолчанию */
+    }
+
+    /* Человек (силуэт) */
+    .person {
+      width: 40px;
+      height: 60px;
+      background: #333;
+      border-radius: 8px 8px 0 0;
+      position: relative;
+      margin-left: 20px;
+    }
+
+    .person::before,
+    .person::after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 24px;
+      background: #333;
+      border-radius: 6px;
+      bottom: -24px;
+    }
+    .person::before { left: -8px; }
+    .person::after { right: -8px; }
+
+    /* Верёвка */
+    .rope {
+      width: 2px;
+      height: 40px;
+      background: #666;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* Пианино */
+    .piano {
+      width: 60px;
+      height: 30px;
+      background: #999;
+      border-radius: 4px;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    .piano::before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 6px;
+      background: #555;
+      border-radius: 4px 4px 0 0;
+    }
+
+    /* Анимация подъёма */
+    @keyframes lift {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .piano.lifted {
+      animation: lift 0.6s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <!-- Кнопка с анимацией -->
+  <div class="piano-scroll-btn" id="pianoBtn">
+    <div class="person"></div>
+    <div class="rope"></div>
+    <div class="piano"></div>
+  </div>
+
+  <!-- Длинный контент для прокрутки -->
+  <div style="height: 2000px; padding: 20px;">
+    <h1>Пример длинной страницы</h1>
+    <p>Прокрутите вниз, чтобы увидеть кнопку.</p>
+  </div>
+
+  <script>
+    // Получаем элементы
+    const btn = document.getElementById('pianoBtn');
+    const piano = btn.querySelector('.piano');
+
+    // Показываем/скрываем кнопку при прокрутке
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        btn.style.display = 'block';
+      } else {
+        btn.style.display = 'none';
+      }
+    });
+
+    // Обработчик клика
+    btn.addEventListener('click', () => {
+      // Добавляем анимацию подъёма пианино
+      piano.classList.add('lifted');
+
+      // Через 0.6с (длина анимации) начинаем плавную прокрутку
+      setTimeout(() => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      }, 600);
+
+      // Убираем класс после анимации, чтобы можно было повторить
+      piano.addEventListener('animationend', () => {
+        piano.classList.remove('lifted');
+      }, { once: true });
+    });
+  </script>
+</body>
+</html>
