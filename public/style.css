@@ -106,6 +106,9 @@ body {
     .contact {
       text-align: center;
       margin-top: 40px;
+      display:grid;
+      justify-content: center;
+      width:calc(100% - 40px);
     }
     .phone {
       font-size: 1.5em;
@@ -131,4 +134,19 @@ body {
         margin-top:33px;
         width:100%;
         max-width:300px;
+    }
+    .icons{
+      width:70px;
+    }
+    .link{
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      justify-items: center;
+      flex-wrap:wrap;
+      width:100%;
+      max-width:500px;
+    }
+    .link > a{
+      margin:10px;
     }
